@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FindMeMore – Smart Recommendation Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">FindMeMore</div>
+    <div class="nav-right">
+      <button class="tab-button active" data-type="book">Books</button>
+      <button class="tab-button" data-type="movie">Movies</button>
+      <button class="tab-button" data-type="music">Music</button>
+    </div>
+  </header>
+
+  <main class="page">
+    <aside class="filters">
+      <div class="filters-header">
+        <h2>Filters</h2>
+        <p class="muted">Select your mood and preferred genres.</p>
+      </div>
+      <div class="filter-section">
+        <h3>Select your mood</h3>
+        <div id="mood-options" class="options-grid"></div>
+      </div>
+      <div class="filter-section">
+        <h3>Select genres</h3>
+        <div id="genre-options" class="options-grid"></div>
+      </div>
+      <button id="recommend-btn" class="primary-btn">Show Recommendations</button>
+    </aside>
+
+    <section class="content">
+      <div class="content-header">
+        <div>
+          <p class="eyebrow">Smart Recommendation Engine</p>
+          <h1>Recommendations for You</h1>
+          <p class="muted">Choose moods and genres to see tailored suggestions.</p>
+        </div>
+        <div class="tagline">Made for explorers</div>
+      </div>
+      <div id="results" class="card-grid">
+        <div class="empty-state">Select filters and click “Show Recommendations” to get suggestions.</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
